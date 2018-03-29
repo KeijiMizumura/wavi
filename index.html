@@ -13,10 +13,40 @@
 </head>
 
 <body>
+    <!-- SIDE NAV -->
+    <nav id="side-nav">
+        <h1 id="closeButton">
+            <i class="fa fa-times-circle"></i>
+        </h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a href="projects.html">
+                    <i class="fa fa-wrench"></i> Projects</a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fa fa-question"></i> About</a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i> Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- HEADER -->
     <header id="main-header">
         <div class="container">
             <nav id="main-nav">
+                <!--Hamburger-->
+                <h1 id="mobileNav">
+                    <i class="fa fa-bars"></i>
+                </h1>
+
                 <h1 id="brand">WAVI</h1>
                 <ul id="navigation">
                     <li>
@@ -55,16 +85,57 @@
         <section id="project-preview" class="grid">
             <div class="container">
                 <h2 class="content-title">
-                    I Develop Websites
+                    Welcome to my website
                 </h2>
                 <div class="project-text">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem provident qui ab ipsa asperiores, corrupti molestias hic
-                        possimus necessitatibus recusandae cum alias commodi praesentium officia sint, accusantium aperiam
-                        nostrum et.
+                        Hi, I'm Mizumura Keiji, a web developer that is currently studying programming and learning front-end web development. Take
+                        a look inside my website and feel free to click those links!
                     </p>
                 </div>
             </div>
+        </section>
+
+        <!-- Project Cards -->
+        <section id="project-cards" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/34676/pexels-photo.jpg?cs=srgb&dl=code-coding-computer-34676.jpg&fm=jpg" alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Web Development</h3>
+                            <p>
+                                Front end web development using the HTML5 and CSS3 with a little mix of Vanilla JavaScript!
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/326502/pexels-photo-326502.jpeg?cs=srgb&dl=apple-computer-decor-326502.jpg&fm=jpg"
+                            alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Design</h3>
+                            <p>
+                                Designing and prototyping websites using Photoshop.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/442576/pexels-photo-442576.jpeg?cs=srgb&dl=blur-close-up-device-442576.jpg&fm=jpg"
+                            alt="Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Game Development</h3>
+                            <p>
+                                I'm creating a Visual Novel Template using pure HTML, CSS and JavaScript with other frameworks.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </section>
 
         <!-- Project Cards -->
@@ -95,17 +166,17 @@
                 </li>
                 <li>
                     <div class="card">
-                        <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg?cs=srgb&dl=business-charts-commerce-265087.jpg&fm=jpg"
+                        <img src="https://static.pexels.com/photos/442576/pexels-photo-442576.jpeg?cs=srgb&dl=blur-close-up-device-442576.jpg&fm=jpg"
                             alt="Image">
                         <div class="card-content">
-                            <h3 class="card-title">Low Price</h3>
+                            <h3 class="card-title">Game Development</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rerum quod aut deserunt voluptates modi.
+                                I'm creating a Visual Novel Template using pure HTML, CSS and JavaScript with other frameworks.
                             </p>
                         </div>
                     </div>
                 </li>
-                
+
             </ul>
         </section>
 
@@ -114,8 +185,7 @@
             <div class="container">
                 <h1>About</h1>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, ab repellat, illum accusamus eum possimus maiores ipsa assumenda
-                    neque modi velit voluptatem molestiae nulla impedit itaque voluptates id ipsum deserunt.
+                    Basically a portfolio about myself being a web developer. Click the link below to see more if you want to know better about me.
                 </p>
                 <a href="about.html" class="btn">See More </a>
             </div>
@@ -128,6 +198,7 @@
             <sup>&trade;</sup> Copyright &copy; 2018</p>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 

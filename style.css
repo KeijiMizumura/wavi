@@ -66,9 +66,24 @@ p{
 
 }
 
+#mobileNav{
+    padding-top: 0.9em;
+    font-size: 2em;
+    float: left;
+    cursor: pointer;
+}
+
+#mobileNav:hover{
+    color: #444;
+}
+
 #main-nav #brand{
     margin: 0;
-    padding: 0.7em;
+    padding: 1.4em;
+}
+
+#navigation{
+    display: none;
 }
 
 #main-nav #navigation li{
@@ -80,6 +95,48 @@ p{
     text-decoration: none;
     color: #fff;
 }
+
+/* Side Navigation */
+
+#side-nav{
+    position: fixed;
+    width: 300px;
+    background: #3f7ee2;
+    height: 100%;
+    left: -310px;
+    transition: left 300ms;
+    box-shadow: 3px 0px 5px #444;
+}
+
+#side-nav ul{
+    padding: 10px 0px;
+    text-align: left;
+}
+
+#side-nav ul li{
+    
+}
+
+#side-nav ul li a{
+    display: block;
+    padding: 30px 0px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+
+#closeButton{
+    cursor: pointer;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
 
 /* SHOWCASE */
 #showcase{
@@ -117,10 +174,13 @@ p{
 #project-preview{
     background: var(--primary-color);
     color: #fff;
-    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 3em;
 }
 
 /* Project Cards */
+
+
 
 #project-cards{
     padding: 2em 1em 1em;
@@ -137,6 +197,13 @@ p{
     background: #fff;
     margin-bottom: 1em;
     box-shadow: 0 0 15px 1px #ddd;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+#project-cards li:hover{
+    transition: background-color 400ms;
+    background-color: #66a0ff;
 }
 
 .card-content{
@@ -198,6 +265,14 @@ p{
 /* Media Queries */
 
 @media(min-width: 700px){
+    #side-nav{
+        display: none;
+    }
+
+    #mobileNav{
+        display: none;
+    }
+
     .grid{
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
@@ -220,19 +295,23 @@ p{
         line-height: 65px;
     }
     #navigation{
+        display: block;
         float: right;
         line-height: 100px;
     }
-    #navigation li{
-        float: left;
-        display: inline-block;
-        padding: 0;
-        margin: 0;
+    #main-nav #brand{
+    margin: 0;
+    padding: 0.7em;
+    }
+    #main-nav #navigation li{
+    display: inline-block;
+    padding: 0;
+    float:left;
     }
     #navigation a{
         display: block;
-        padding: 0 5px;
-        width: 80px;
+        padding: 0 10px;
+        width: 90px;
         margin: 0;
         transition: background 300ms;
     }
@@ -240,17 +319,5 @@ p{
         transition: background 300ms;
         display: block;
         background:#5481c9;
-    }
-}
-
-@media(max-width: 360px){
-    #navigation li a{
-        font-size: .8em;
-    }
-}
-
-@media(max-width: 320px){
-    #navigation li a{
-        font-size: .7em;
     }
 }

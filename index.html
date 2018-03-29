@@ -13,6 +13,20 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-title">
+            <h1>Message<span class="exit-modal" id="close-modal">
+                <i class="fa fa-times-circle"></i>
+            </span></h1>
+        </div>
+        <div class="modal-content">
+            <p id="modal-message" class="modal-text">
+                If you want to learn more about WAVI <sup>&trade;</sup> just open this go to the About Page above!
+            </p>
+        </div>
+    </div>
+
     <!-- SIDE NAV -->
     <nav id="side-nav">
         <h1 id="closeButton">
@@ -73,7 +87,7 @@
             <div class="content-text">
                 <h1>Hello, I'm a Web Developer</h1>
                 <p>Front End Web Developer | Designer</p>
-                <a href="#" class="btn">Learn More</a>
+                <a href="#" class="btn" id="callModal">Learn More</a>
             </div>
         </div>
     </section>
@@ -199,6 +213,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="modal.js"></script>
 
 </body>
 
